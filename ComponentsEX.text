@@ -1,0 +1,67 @@
+############################Using a Function Component with ES6 Arrow Function############################
+import React from 'react';
+
+const ProfilePage = () => {
+  return (
+    <div>
+      <h1>Profile page</h1>
+    </div>
+  );
+};
+
+export default ProfilePage;
+
+###############################Using a Function Component with a Regular Function#########################################################
+import React from 'react';
+
+function ProfilePage() {
+  return (
+    <div>
+      <h1>Profile page</h1>
+    </div>
+  );
+}
+
+export default ProfilePage;
+
+############################Using a Class Component############################################################
+import React, { Component } from 'react';
+
+class ProfilePage extends Component {
+  render() {
+    return (
+      <div>
+        <h1>Profile page</h1>
+      </div>
+    );
+  }
+}
+
+export default ProfilePage;
+#############################JSX hooks ###########################################################
+
+import React, { useState, useEffect } from 'react';
+
+const ProfilePage = () => {
+  const [title, setTitle] = useState('Profile page');
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
+  return (
+    <div>
+      <h1>{title}</h1>
+    </div>
+  );
+};
+
+export default ProfilePage;
+
+########################################################################################
+
+
+
+
+
+
