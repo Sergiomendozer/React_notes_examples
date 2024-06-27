@@ -1,5 +1,7 @@
 npm install react-router-dom
 npm install @types/react-router-dom
+npm install react-router-dom@latest
+
 npm run dev
 
 yarn add react-router-dom
