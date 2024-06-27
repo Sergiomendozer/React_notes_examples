@@ -1,0 +1,10 @@
+npm install react-router-dom
+npm install @types/react-router-dom
+npm run dev
+clear
+
+App.tsx
+import * as ReactRouterDOM from "react-router-dom";
+
+index.tsx
+import ReactDOM from "react-dom/client";
